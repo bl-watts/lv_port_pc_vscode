@@ -98,6 +98,10 @@ if(USE_FREERTOS)
     target_link_libraries(main freertos_config)
 endif()
 
+# Add UI Watts Charger
+add_subdirectory(ui_watts_charger)
+target_link_libraries(main ui_watts_charger)
+
 # Custom target to run the executable
 add_custom_target(run COMMAND ${EXECUTABLE_OUTPUT_PATH}/main DEPENDS main)
 

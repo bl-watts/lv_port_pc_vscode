@@ -7,3 +7,6 @@
 [submodule "FreeRTOS"]
 	path = FreeRTOS
 	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
+[submodule "ui_watts_charger"]
+	path = ui_watts_charger
+	url = git@github.com:lvgl-private/watts-charger.git
