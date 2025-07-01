@@ -20,9 +20,10 @@
   #include <pthread.h>
 #endif
 #include "lvgl/lvgl.h"
-#include "lvgl/examples/lv_examples.h"
-//#include "lvgl/demos/lv_demos.h"
+//#include "lvgl/examples/lv_examples.h"
 #include "ui_watts_charger.h"
+#include "lvgl/demos/lv_demos.h"
+#include <SDL.h>
 
 /*********************
  *      DEFINES
