@@ -25,6 +25,8 @@
 #include "lvgl/demos/lv_demos.h"
 #include <SDL.h>
 
+#include "hal/hal.h"
+
 /*********************
  *      DEFINES
  *********************/
@@ -77,6 +79,9 @@ int main(int argc, char **argv)
   (void)argc; /*Unused*/
   (void)argv; /*Unused*/
 
+
+  #if LV_USE_OS == LV_OS_NONE
+
   /*Initialize LVGL*/
   lv_init();
 
@@ -84,6 +89,7 @@ int main(int argc, char **argv)
   default_display_init(480, 480);
 
   #if LV_USE_OS == LV_OS_NONE
+  sdl_hal_init(320, 480);
 
   /* Run the default demo */
   /* To try a different demo or example, replace this with one of: */
