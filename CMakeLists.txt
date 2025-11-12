@@ -83,7 +83,7 @@ endif()
 
 # Add UI Watts Charger
 add_subdirectory(ui_watts_charger)
-target_link_libraries(main ui_watts_charger)
+list(APPEND MAIN_LIBS ui_watts_charger ui_charger_panel)
 
 # Custom target to run the executable
 add_custom_target(run COMMAND ${EXECUTABLE_OUTPUT_PATH}/main DEPENDS main)
