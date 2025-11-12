@@ -1,3 +1,14 @@
-[submodule "lv_drivers"]
-	path = lv_drivers
-	url = https://github.com/lvgl/lv_drivers.git
+[submodule "lvgl"]
+	path = lvgl
+	url = https://github.com/lvgl/lvgl.git
+	branch = release/v9.4
+	shallow = true
+[submodule "FreeRTOS"]
+	path = FreeRTOS
+	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
+	shallow = true
+[submodule "ui_watts_charger"]
+	path = ui_watts_charger
+	url = git@github.com:WattsSolutions/ev_lvgl_ui.git
+	branch = dev
+	shallow = true
